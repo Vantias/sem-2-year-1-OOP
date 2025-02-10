@@ -1,8 +1,8 @@
 //C predifined functions
 /*
  C predefined functions
- Author: Sophy Naliaka Wafula
- Reg No: BSE-05-0183?2024
+ Author: Rodney Aminga
+ Reg No: BSE-05-0192/2024
  Date:20th January 2024.
  This Program entails Human Defined Functions
  */
