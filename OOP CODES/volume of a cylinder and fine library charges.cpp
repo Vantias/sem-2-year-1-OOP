@@ -1,7 +1,7 @@
 /*
 The program is used to find the volume of a cylinder and the seccond part calculates the library fines according to the overdue days by using human defined functions.
-Programmer: Sophy Naliaka Wafula. 
-Registration Number: BSE-05-0183/2024.
+Programmer: Rodney Aming'a. 
+Registration Number: BSE-05-0192/2024.
 Date: 23rd January 2024.
 */
 
