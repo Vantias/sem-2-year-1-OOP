@@ -1,8 +1,8 @@
 /*
 This program defines a Car class with the required attributes and methods, initializes a Car object, 
 displays its details, and updates the mileage after driving specified distances.
-Programmer: Sophy Naliaka Wafula. 
-Registration Number: BSE-05-0183/2024.
+Programmer: Rodney Aminga. 
+Registration Number: BSE-05-0192/2024.
 Date: 2nd Febuary 2025.
 */
 
