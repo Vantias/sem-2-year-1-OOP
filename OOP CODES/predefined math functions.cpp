@@ -1,8 +1,8 @@
 //C predifined functions
 /*
  C predefined functions
- Author:
- Reg No:
+ Author: Rodney Aminga
+ Reg No:BSE-05-0192/2024
  Date:
  Version 1
  */
