@@ -1,0 +1,37 @@
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+class BankHolder {
+private:
+    int balance;
+    string name;
+
+public:
+    void setBalance(int holder_balance) {
+        balance = holder_balance;
+    }
+
+    int getBalance() {
+        return balance;
+    }
+
+    void setName(string holder_name) {
+        name = holder_name;
+    }
+
+    string getName() {
+        return name;
+    }
+};
+
+int main() {
+    BankHolder holder1;
+    holder1.setName("gepard");
+    holder1.setBalance(1000);
+
+    cout << "The bank holder is " << holder1.getName() << " with a balance of $" << holder1.getBalance() << endl;
+
+    return 0;
+}
