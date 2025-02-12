@@ -1,4 +1,12 @@
 
+ Author: Rodney Aminga
+ Reg No: BSE-05-0192/2024
+ Date:12 february 2024.
+ This Program entails Encampasulation illustrartions
+ */
+ 
+
+
 #include <iostream>
 #include <string>
 using namespace std;
@@ -8,19 +16,24 @@ private:
     int balance;
     string name;
 
-public:
+public:   
+/*setter method */
     void setBalance(int holder_balance) {
         balance = holder_balance;
     }
 
+/*Getter method */
     int getBalance() {
         return balance;
     }
 
+/*setter method */
     void setName(string holder_name) {
         name = holder_name;
     }
 
+
+/*Getter method */
     string getName() {
         return name;
     }
@@ -28,7 +41,7 @@ public:
 
 int main() {
     BankHolder holder1;
-    holder1.setName("gepard");
+    holder1.setName("Gepard");
     holder1.setBalance(1000);
 
     cout << "The bank holder is " << holder1.getName() << " with a balance of $" << holder1.getBalance() << endl;
