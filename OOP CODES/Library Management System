@@ -1,0 +1,83 @@
+//NAME : Rodney
+// ADM : BSE-05-0192/2024
+// GROUP : BSE Group 3
+
+
+
+
+
+#include <iostream>
+
+using namespace std;
+
+// Primary class 
+class Person {
+protected:
+    string name;
+
+    /* Setter function */
+public:
+    void setName(string n) {
+        name = n;
+    }
+
+    /* Getter function */
+    string getName() {
+        return name;
+    }
+};
+
+// Derived class library member 
+class LibraryMember : public Person {
+private:
+    int memberID;
+    int booksBorrowed;
+
+public: 
+    LibraryMember(string n, int ID, int books) {
+        setName(n);
+        memberID = ID;
+        booksBorrowed = books;
+    }
+
+    int getMemberID() {
+        return memberID;
+    }
+
+    int getBooksBorrowed() {
+        return booksBorrowed;
+    }
+};
+
+// Derived class premium member 
+class PremiumMember : public LibraryMember {
+private:
+    double membershipFee;
+
+public:
+    PremiumMember(string n, int ID, int books, double fee) : LibraryMember(n, ID, books) {
+        membershipFee = fee;
+    }
+
+    /* Setter function */
+    void setMembershipFee(double fee) {
+        membershipFee = fee;
+    }
+
+    /* Getter function */
+    double getMembershipFee() {
+        return membershipFee;
+    }
+};
+
+// main function 
+int main() {
+    PremiumMember member("Merlin", 12345, 5, 100.0);
+
+    cout << "Account Holder: " << member.getName() << endl;
+    cout << "Member ID: " << member.getMemberID() << endl;
+    cout << "Books Borrowed: " << member.getBooksBorrowed() << endl;
+    cout << "Membership Fee: $" << member.getMembershipFee() << endl;
+
+    return 0;
+}
