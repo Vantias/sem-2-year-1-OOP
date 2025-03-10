@@ -1,0 +1,49 @@
+//Rodney Aming'a
+// ADM : BSE-05-0192/2024
+
+
+#include <iostream>
+using namespace std;
+// structure 
+struct Student {
+	string name;
+	int IdNo;
+	string email;
+	int DOB;
+	float GPA;
+	
+	
+};
+// function
+void display (const Student s1 ){
+    cout << s1.name<<endl;  
+	cout << s1.IdNo <<endl;   
+	cout << s1.email <<endl;   
+	cout << s1.DOB <<endl; 
+	cout << s1.GPA <<endl;   }
+	//function2 
+	void adress_display(const Student &s1){
+		
+      cout << &s1.name<<endl;  
+	    cout << &s1.IdNo<<endl;  
+	     cout << &s1.email<<endl;  
+	      cout << &s1.DOB<<endl;  
+	       cout << &s1.GPA<<endl;
+	}
+	
+
+	 
+
+int main() {
+	Student  s1 ={"grey ", 12345 , "grey@gmail.com" , 435362, 0.97 };
+	
+	Student  s2 ={"Hunt ", 957508 , "hunt@gmail.com" , 75848484, 0.5 };
+//function call	
+	  display(s1); 
+ cout<<endl;
+	  display(s2);
+ cout<<endl;
+    adress_display(s1);
+
+	return 0;
+}
